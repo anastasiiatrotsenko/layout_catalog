@@ -1,26 +1,27 @@
 @import '../variables';
 
 .card {
-  width: 200px;
-  height: 408px;
+  width: $card-width;
+  height: $card-height;
+  padding: $card-padding;
   border: 1px solid $color-border;
   border-radius: $radius-small;
-  padding: 32px 16px 16px;
   box-sizing: border-box;
-  transition: transform 300ms;
+  transition: transform $transition-duration $transition-ease;
 
   &__title {
-    font-size: 12px;
+    font-size: $font-size-base;
     font-weight: $fw-medium;
     line-height: $line-height-base;
     margin: 0 0 4px;
+    transition: color $transition-duration $transition-ease;
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale($hover-scale);
 
     .card__title {
-      color: #34568b;
+      color: $color-hover-title;
     }
   }
 
@@ -90,10 +91,10 @@
     border-radius: $radius-small;
     text-decoration: none;
     color: $color-white;
-    font-size: 14px;
+    font-size: $font-size-medium;
     font-weight: $fw-bold;
     font-family: $font-family;
-    transition: all 0.3s ease;
+    transition: all $transition-duration $transition-ease;
     border: 1px solid transparent;
 
     &:hover {

@@ -13,11 +13,11 @@ body {
 }
 
 .header {
-  background-color: #fff;
+  background-color: $color-bg-header;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: $nav-padding;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   font-size: 12px;
   font-weight: $fw-medium;
@@ -40,20 +40,20 @@ body {
 
     &__item {
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: $nav-gap;
       }
     }
 
     &__link {
       text-transform: uppercase;
-      height: 60px;
+      height: $nav-height;
       position: relative;
-      color: #060b35;
+      color: $color-link;
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: color 300ms;
+      transition: color $transition-duration $transition-ease;
 
       &:hover,
       &.is-active {

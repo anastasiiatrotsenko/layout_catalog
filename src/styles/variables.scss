@@ -18,7 +18,24 @@ $radius-small: 5px; // маленький радиус скругления дл
 $space-md: 16px; // для марджин боттом между элементами
 $space-lg: 24px; // большой отступ между блоками
 $gap-xs: 4px; // маленький промежуток между элементами
-
+$gap-lay: 48px 46px;
+$padding: 50px 40px;
 $star-size: 16px; // размер одной звездочки
-
 $btn-height: 40px; // высота кнопки
+$card-width: 200px;
+$card-height: 408px;
+$card-padding: 32px 16px 16px;
+$transition-duration: 300ms;
+$transition-ease: ease;
+$hover-scale: 1.2;
+$color-hover-title: #34568b;
+$hover-scale: 1.2;
+$color-hover-title: #34568b;
+$font-size-base: 12px;
+$font-size-small: 10px;
+$font-size-medium: 14px;
+$color-bg-header: #fff;
+$color-link: #060b35;
+$nav-height: 60px;
+$nav-padding: 0 50px;
+$nav-gap: 20px;
