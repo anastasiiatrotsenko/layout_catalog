@@ -13,7 +13,7 @@
     font-size: $font-size-base;
     font-weight: $fw-medium;
     line-height: $line-height-base;
-    margin: 0 0 4px;
+    margin: 0 0 $gap-xs;
     transition: color $transition-duration $transition-ease;
   }
 
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     font-weight: $fw-regular;
-    font-size: 10px;
+    font-size: $font-size-small;
     line-height: $line-height-sm;
   }
 
@@ -53,7 +53,7 @@
   }
 
   &__code {
-    font-size: 10px;
+    font-size: $font-size-small;
     font-weight: $fw-regular;
     line-height: $line-height-sm;
     color: $color-text-gray;
@@ -98,8 +98,8 @@
     border: 1px solid transparent;
 
     &:hover {
-      background-color: #fff;
-      color: #00acdc;
+      background-color: $color-white;
+      color: $color-primary;
       border-color: $color-primary;
     }
   }
