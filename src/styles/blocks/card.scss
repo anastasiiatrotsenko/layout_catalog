@@ -1,0 +1,105 @@
+@import '../variables';
+
+.card {
+  width: 200px;
+  height: 408px;
+  border: 1px solid $color-border;
+  border-radius: $radius-small;
+  padding: 32px 16px 16px;
+  box-sizing: border-box;
+  transition: transform 300ms;
+
+  &__title {
+    font-size: 12px;
+    font-weight: $fw-medium;
+    line-height: $line-height-base;
+    margin: 0 0 4px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+
+    .card__title {
+      color: #34568b;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-lg;
+  }
+
+  &__reviews {
+    display: flex;
+    align-items: center;
+    font-weight: $fw-regular;
+    font-size: 10px;
+    line-height: $line-height-sm;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto 40px;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__code {
+    font-size: 10px;
+    font-weight: $fw-regular;
+    line-height: $line-height-sm;
+    color: $color-text-gray;
+    margin-bottom: $space-md;
+  }
+
+  &__money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-md;
+  }
+
+  &__price {
+    font-weight: $fw-regular;
+    font-size: 12px;
+    line-height: $line-height-base;
+    color: $color-text-gray;
+  }
+
+  &__currency {
+    font-weight: $fw-bold;
+    font-size: 16px;
+    line-height: $line-height-base;
+    color: $color-text-dark;
+  }
+
+  &__buy {
+    display: inline-block;
+    width: 166px;
+    height: $btn-height;
+    line-height: $btn-height;
+    text-align: center;
+    background-color: $color-primary;
+    border-radius: $radius-small;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: $fw-bold;
+    font-family: $font-family;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: #fff;
+      color: #00acdc;
+      border-color: $color-primary;
+    }
+  }
+}
